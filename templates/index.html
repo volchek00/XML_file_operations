@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XML Processing</title>
+</head>
+<body>
+    <h1>XML Processing</h1>
+    <form action="/process" method="POST">
+        <p>Enter your choice (1, 2, 3, or q to quit):</p>
+        <input type="text" name="choice">
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+        <h2>Result:</h2>
+        {{ result|safe }}
+    {% endif %}
+</body>
+</html>
